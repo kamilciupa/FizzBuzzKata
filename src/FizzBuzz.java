@@ -5,14 +5,19 @@ public class FizzBuzz {
 		if(i == 0)
 			return "0";
 		
-		if(i % 3 == 0 && i % 5 == 0)
-			return "FizzBuzz";
+		String output ="";
 		
+		return _of(i, output);
+	}
+
+	private static String _of(int i, String output) {
 		if(i % 3 == 0)
-			return "Fizz";
+			output += "Fizz";
 		if(i % 5 == 0)
-			return "Buzz";
-		return String.valueOf(i);
+			output +=  "Buzz";
+		
+		
+		return !output.isEmpty() ? output : String.valueOf(i);
 	}
 
 }
