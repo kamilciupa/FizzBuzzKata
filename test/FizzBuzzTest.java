@@ -9,4 +9,8 @@ public class FizzBuzzTest {
 		assertThat(FizzBuzz.of(0), is("0"));
 	}
 	
+	@Test
+	public void of1is1(){
+		assertThat(FizzBuzz.of(1), is("1"));
+	}
 }
